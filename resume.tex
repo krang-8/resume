@@ -23,7 +23,7 @@
 %%% Override a directory location for fonts(default: 'fonts/')
 \fontdir[fonts/]
 \geometry{left=1cm, top=.8cm, right=1cm, bottom=1cm, footskip=.5cm}
-
+\usepackage{hyperref}
 %%% Configure a directory location for sections
 \newcommand*{\sectiondir}{resume/}
 
@@ -47,6 +47,7 @@
 \linkedin{mahmoudabdelaty}
 
 
+
 %%% Override a separator for social informations in header(default: ' | ')
 %\headersocialsep[\quad\textbar\quad]
     \begin{document}
@@ -63,15 +64,17 @@
 \vspace{-5mm}
 \cvsection{Education}
 \begin{cventries}
+    \vspace{-2mm}
 	\cventry
 	{University of Calgary}
 	{Bachelor\textquotesingle{}s Degree in Computer Science}
 	{Calgary, Alberta}
 	{2019 – 2023}
-    {}
+    {
       \begin{cvparagraph} % Description(s) bullet points
         {Relevant Courses : CPSC for CPSC Majors I \& II, Principles of Microeconomics, Linear Methods , Calculus , Discrete Mathematics, Elementary Formal Logic, Statistics , Data Structures, Algorithms \& Analysis, Computing Machinery I \& II, Thinking with Data, Personal Financial Management, Computability, Intro to Software Engineering, Info Security \& Privacy, IT Ethics, Design \& Analysis Algorithms, Programming Paradigms, DBMS, HCI I \& II, Web-Based Systems.}
       \end{cvparagraph}
+      }
      
 
 %---------------------------------------------------------
@@ -79,18 +82,18 @@
 \end{cventries}
 
 
-\vspace{-5mm}
+\vspace{-11mm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Experience
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \cvsection{Project Experience}
-\vspace{-3mm}
+\vspace{-4mm}
 \begin{cventries}
 	  \cventry
 	{February 2022 - April 2022}
     {Agora}
 	{NodeJS, React, ASP.Net, SQLite, CSS, HTML, Java, Swagger, Postman API}
-	{https://github.com/krang-8/Agora}
+	{\href{https://github.com/krang-8/Agora}{Github Repository}}
     {
       \begin{cvitems} % Description(s) of experience/contributions/knowledge
         \item {Lead a group of 3 to build a full-stack ecommerce store base and DBMS targeting small businesses.}
@@ -100,12 +103,13 @@
       \end{cvitems}
     }
     	\vspace{1mm}
+    \vspace{-2mm}
 
 		  \cventry
 	{February 2020 - April 2020}
 	{Cooks N Books}
 	{C\#, WPF, XAML, CSS, Git }
-	{https://github.com/krang-8/cooksNbooks}
+	{\href{https://github.com/krang-8/cooksNbooks}{Github Repository}}
     {
       \begin{cvitems} % Description(s) of experience/contributions/knowledge
         \item {Identified work contexts, system constraints and expected users based on research conducted utilizing the task centered system design process.}
@@ -116,12 +120,11 @@ causing major usability problems.}
       \end{cvitems}
     }
         	\vspace{1mm}
-
 	  \cventry
 	{February 2021 - April 2021}
     {Self Checkout Station}
 	{Java, JUnit}
-	{https://github.com/krang-8/SENG-300-Iteration-3}
+	{\href{https://github.com/krang-8/SENG-300-Iteration-3}{Github Repository}}
     {
       \begin{cvitems} % Description(s) of experience/contributions/knowledge
         \item {Worked with a team of 12 members to develop a self checkout station system.}
@@ -132,10 +135,10 @@ causing major usability problems.}
     	\vspace{1mm}
 
 	  \cventry
-    {July 2020 - September 2020} % Organization/group
+    {July 2020 - September 2020} 
     {Game Tracker Discord Bot}
-    {Python, APIs, Digital Ocean} % Location
-    {https://github.com/krang-8/Game-Tracker} % Date(s)
+    {Python, APIs, Digital Ocean} 
+    {\href{https://github.com/krang-8/Game-Tracker}{Github Repository}} 
     {
       \begin{cvitems} % Description(s) of experience/contributions/knowledge
         \item {Utilized both the discord and faceit apis to fetch, collect and post data based on live matches 24/7 and player statistics upon request.}
@@ -147,29 +150,38 @@ causing major usability problems.}
 
 	
 	
-	\vspace{1mm}
-		  \cventry
+\cventry
 	{February 2020 - April 2020}
 	{Side Scroller Video Game}
 	{Java, JavaFX}
-	{https://github.com/krang-8/Game-Project}
+	{\href{https://github.com/krang-8/Game-Project}{Github Repository}}
     {
       \begin{cvitems} % Description(s) of experience/contributions/knowledge
-        \item {Developed a side-scroller adventure video game utilizing java and javafx among a team of 4.}
-        \item {Implemented a collision system ensuring smooth movement of the player model and seamless interaction with the game world.}
-        \item {Lead the team in the design aspect, creating sprites for the player model and the world levels.}
+        \item {Designed and developed a side-scroller adventure video game utilizing java and javafx among a team of 4 where I created sprites for the character model and implemented a collision system to ensure smooth and seamless movement and interaction with the game world. }
       \end{cvitems}
     }
 
 \end{cventries}
 
 
-\vspace{-5mm}
+\vspace{-4mm}
 
 \cvsection{Work Experience}
 \vspace{-2mm}
 \begin{cventries}
-
+	\cventry
+	{Automation Engineer (Internship)}
+	{Royal Bank of Canada}
+	{Remote in Calgary}
+	{January 2023 - August 2023}
+	{\begin{cvitems}
+		\item {Automated compliance workflows by designing and developing Ansible playbooks, eliminating the need to.}
+		\item {Developed an implementation for transaction monitoring on MQ channels through Dynatrace, enabling real-time tracking and performance using Elastic.}
+		\item {Worked in an agile environment using Jira to keep track of tasks and progress in sprints and PIs and Confluence for documentation purposes.}
+  		\item {Utilized technologies such as Docker, Jfrog Artifactory, Dynatrace, Jenkins, Moogsoft, Vault, and the ELK stack to ensure reliable and efficient software operations, following SRE principles, resulting in improved system reliability, proactive performance management, enhanced security, and accelerated development cycles in addition to increased observability.}
+		\end{cvitems}}
+		\vspace{1mm}
+  
 	\cventry
 	{Data Analyst \& Junior Community Manager}
 	{YaLLa Esports}
@@ -177,14 +189,13 @@ causing major usability problems.}
 	{April 2021 – Present}
 	{\begin{cvitems}
 		\item {Co-lead the data analysis team compiling monthly, quarterly and campaign-focused data reports, in addition to competitors reports, evaluating technical and social aspects leading to a consistent increase in engagement, impressions and social growth.}
-		\item {Assisted in handling social media channels of the organization by covering live games and producing content.}
-		\item {Managed the community discord and communicated with the fans.}
+		\item {Assisted in growing the organization's social media channels by covering live games, generating content ideas, producing content, organizing community events, and communicating with the fans.}
 		\end{cvitems}}
 		\vspace{1mm}
 	\cventry
 	{Head Admin}
 	{Middle East Stars League}
-	{Remote}
+	{Remote in Dubai}
 	{April 2020 – November 2021}
 	{\begin{cvitems}
 		\item {Managed both daily operations and tournaments for a gaming hub helping it grow tenfold with over 12500 followers and 3000 paying active subscribers.}
@@ -194,15 +205,13 @@ causing major usability problems.}
 	\vspace{1mm}
 
 	\cventry
-	{Admin / Observer}
-	{Esports Freelancing}
+	{Esports Admin - Observer - Event Organizer}
+	{Freelance}
 	{Dubai, UAE}
 	{2020 – 2021}
 	{\begin{cvitems}
+ 		\item {Worked with esports operators such as PLG, Webedia, Saudi Esport Federation to ensure and maintain contestants happiness and satisfaction through fair rulings and official communication for events sponsored by large brands such as KFC, Adidas, Red Bull.}
 		\item {Coded scripts to verify 5000+ contestant profiles saving over 200+ hours of work for a 9-man admin team.}
-		\item {Organized and administered gaming tournaments working with esport operators such as PLG, Webedia, Saudi Esport Federation.}
-		\item {Maintained happiness and satisfaction of contestants by moderating discord and handling communication in large scale events.}
-		\item {Entrusted by large brands such as KFC, Adidas, Red Bull to manage and administrate their esport events.}
 		\item {Assisted in formulating storytelling narratives for the social media teams.}
 		\end{cvitems}}
 \end{cventries}
